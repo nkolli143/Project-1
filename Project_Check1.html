@@ -128,20 +128,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>plastic <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">sample_n</span>(<span class="dv">6</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>    country year parent_company empty hdpe ldpe o pet pp ps pvc grand_total
-1 Argentina 2019         Cepita     0    0    0 0   9  0  0   0           9
-2    Latvia 2020         Essity     0    0    0 1   0  0  0   0           1
-3    Rwanda 2019          Movit    NA    9   NA 0   0 NA NA  NA           9
-4    Latvia 2019          Panda    NA    0    1 0   0  0 NA  NA           1
-5 Hong Kong 2019         Tao Di     0    0    0 0   5  0  0  NA           5
-6   Vietnam 2019        Delafil     0    0    0 0   1  0  0   0           1
-  num_events volunteers
-1          4        243
-2          1          5
-3          2         82
-4          1         13
-5          7         67
-6          4        400</code></pre>
+<pre><code>      country year       parent_company empty hdpe ldpe  o pet pp ps pvc
+1   Indonesia 2019              Unigold     0    0    2  0   0  0  0   0
+2     Vietnam 2019     Thuc Pham A Chau     0    0    0  1   0  0  0   0
+3 Philippines 2019                Ricoa     0    0    4 74   0  0  0   0
+4       China 2020           Septwolves     0    0    0 40   0  0  0   0
+5 Philippines 2019 Pt. Mayora Indah Tbk     0    0    0  0  26  0  0   0
+6       EMPTY 2019     Serra da Estrela    NA    0    0  0   1  0  0   0
+  grand_total num_events volunteers
+1           2         32       6850
+2           1          4        400
+3          78         20       3751
+4          40          1       2175
+5          26         20       3751
+6           1        145       1416</code></pre>
 </div>
 </div>
 </section>
@@ -167,6 +167,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="rq4">RQ4</h3>
 <p>Is there a relationship between plastic waste and a countries economic status (devloped vs devloping countries)?</p>
 </section>
+</section>
+<section id="visualizations" class="level2">
+<h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
+<p><img src="images/visuals.png" class="img-fluid"></p>
 </section>
 
 </main>
