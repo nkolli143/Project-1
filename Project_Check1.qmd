@@ -23,7 +23,7 @@ plastic |> dplyr::sample_n(6)
 ```
 ## Data Cleaning
 
-Sarah used several cleaning steps to make it usable. The original data came from a bunch of different CSV files from different countries and years, everything had to be combined into one dataset first. For the 2019 data, the country wasn’t included, so it was pulled from the file names and added as a new column. Also, not every country reported all plastic types, so missing columns like HDPE, PET, and more were added and filled with 0s. Some rows like “Grand Total” and entries where the company was listed as “NULL” were removed because they were just summary rows and not actual observations, which could mess up the analysis. The column names were also cleaned up so both years matched, and a year column was added before merging everything together.  
+Sarah used several cleaning steps to make it usable. The original data came from a bunch of different CSV files from different countries and years, everything had to be combined into one dataset  first. For the 2019 data, the country wasn’t included, so it was pulled from the file names and added as a new column. Also, not every country reported all plastic types, so missing columns like HDPE, PET, and more were added and filled with 0s. Some rows like “Grand Total” and entries where the company was listed as “NULL” were removed because they were just summary rows and not actual observations, which could mess up the analysis. The column names were also cleaned up so both years matched, and a year column was added before merging everything together.  
 
 ## Explorations
 
