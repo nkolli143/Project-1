@@ -1,9 +1,7 @@
 ---
-title: "Untitled"
+title: "Project Checkpoint 1 "
 format: html
 ---
-
-## Project Checkpoint 1 
 
 ### Introduction
 My dataset is the [Break Free From Plastic (BFFP)](https://github.com/rfordatascience/tidytuesday/blob/main/data/2021/2021-01-26/readme.mdz) from TidyTuesdays. This dataset looks at plastic waste collected during cleanup events around the world, where volunteers record variables like the country, year, parent company responsible, and counts of different plastic types.
@@ -18,27 +16,25 @@ The different types of plastic are numeric, and they can be anywhere from 0 to a
 
 Here are a few rows of the dataset:
 ```{r}
-library(dplyr)
-library(ggplot2)
 plastic <- read.csv("~/Documents/R/plastics.csv")
-head(plastic, n = 10)
+head(plastic)
 plastic |> dplyr::sample_n(6)
 
 ```
-### Data Cleaning
+## Data Cleaning
 
 Sarah used several cleaning steps to make it usable. The original data came from a bunch of different CSV files from different countries and years, everything had to be combined into one dataset first. For the 2019 data, the country wasn’t included, so it was pulled from the file names and added as a new column. Also, not every country reported all plastic types, so missing columns like HDPE, PET, and more were added and filled with 0s. Some rows like “Grand Total” and entries where the company was listed as “NULL” were removed because they were just summary rows and not actual observations, which could mess up the analysis. The column names were also cleaned up so both years matched, and a year column was added before merging everything together. 
 
-### Explorations
+## Explorations
 
-## RQ1
+### RQ1
 Which parent companies contribute the most to plastic waste across different years?
 
-## RQ2
+### RQ2
 How does the distribution of plastic types like HDPE, PET, and more differ by country?
 
-## RQ3
+### RQ3
 How is plastic waste related to a a country’s recycling rate or waste management policies?
 
-## RQ4
+### RQ4
 Is there a relationship between plastic waste and a countries economic status (devloped vs devloping countries)?
