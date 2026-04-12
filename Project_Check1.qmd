@@ -50,22 +50,68 @@ Is there a relationship between plastic waste and a countries economic status (d
 
 ![](images/visuals.png)
 
-Brand type by country
+How does the proportion of different plastic types differ across countries and change over time?
 
 
 ```{r}
 library(dplyr)
 library(purrr)
-brand_countries <- function(brand){
-  plastic %>% filter(parent_company == brand) %>%
-    group_by(year) %>% 
-    summarize(countries = n_distinct(country))
-}
-top_brands <- plastic %>% count(parent_company, sort = TRUE) %>%
-  slice_head(n=10) %>%
-  pull(parent_company)
-top_brands
-map_dfr(top_brands, brand_countries, .id = "brand")
+library(tidyr)
+plastic_type <- c("hdpe", "ldpe", "o", "pet", "pp", "ps", "pvc")
+results <- map_dfr(plastic_type, function(p){
+  plastic %>% group_by(country, year) %>%
+    summarize(
+      total_plastic_per_year_country = sum(grand_total, na.rm = TRUE),
+      type_count = sum(.data[[p]], na.rm = TRUE),
+      .groups = "drop") %>%
+    mutate(
+      plastic_type = p, 
+      proportion = type_count / total_plastic_per_year_country)})
+results
+results <- results %>% 
+  select(country, year, total_plastic_per_year_country, plastic_type, proportion) %>%
+  pivot_wider(
+    names_from = plastic_type,
+    values_from = proportion
+  )
+results %>%
+  mutate(across(-c(country, year, total_plastic_per_year_country), ~ round(.x, 3)))
+results
 ```
+Notes: I grouped the data by country and year, summed total plastic and summed the total of plastic type, and then calculated proportions. I used map() to iterate through each plastic type and combined the results, then reshaped the data to compare types side by side.
+
+Through this data I can see that in each country and year a few specific plastic types make up most of the total plastic waste, rather than contributing equally. For example, in Armenia the plastic type pet made up all of the country's plastic waste
 
 
+How do two brands compare in terms of their global reach, and how similar are their distributions of plastic waste across countries?
+
+```{r}
+
+compare_brands <- function(brand1, brand2) {
+  b1 <- plastic %>%
+    filter(parent_company == brand1) %>%
+    group_by(country) %>%
+    summarize(count1 = sum(grand_total, na.rm = TRUE), .groups = "drop")
+  
+  b2 <- plastic %>%
+    filter(parent_company == brand2) %>%
+    group_by(country) %>%
+    summarize(count2 = sum(grand_total, na.rm = TRUE), .groups = "drop")
+  
+  combined <- full_join(b1, b2, by = "country") %>%
+    mutate(
+      count1 = replace_na(count1, 0),
+      count2 = replace_na(count2, 0))
+  
+  tibble(
+    brand1 = brand1,
+    brand2 = brand2,
+    countries_brand1 = n_distinct(b1$country),
+    countries_brand2 = n_distinct(b2$country),
+    correlation = cor(combined$count1, combined$count2)
+  )
+}
+
+compare_brands("The Coca-Cola Company", "PepsiCo")
+```
+Notes: The function takes in two brands as inputs and filters the dataset separately for each one. It then groups the data by country and calculates the total plastic associated with each brand in each country. The two datasets are combined so that both brands’ values are aligned by country, and missing values are replaced with 0 to show that they werent there. The function calculates the number of countries each brand appears in and computes a correlation coefficient to measure how similarly the two brands are distributed across countries. The Coca-Cola Company and PepsiCo had a correlation coef of .3598 showing that there is a weak correlation in how they’re plastic waste is distributed across countires.
