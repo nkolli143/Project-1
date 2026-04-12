@@ -3,7 +3,7 @@ title: "Project Checkpoint 1 "
 format: html
 ---
 
-### Introduction
+### Introduction 
 
 My dataset is the [Break Free From Plastic (BFFP)](https://github.com/rfordatascience/tidytuesday/blob/main/data/2021/2021-01-26/readme.mdz) from TidyTuesdays. This dataset looks at plastic waste collected during cleanup events around the world, where volunteers record variables like the country, year, parent company responsible, and counts of different plastic types.
 
