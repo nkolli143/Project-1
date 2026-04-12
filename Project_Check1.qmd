@@ -49,3 +49,23 @@ Is there a relationship between plastic waste and a countries economic status (d
 ## Visualizations
 
 ![](images/visuals.png)
+
+Brand type by country
+
+
+```{r}
+library(dplyr)
+library(purrr)
+brand_countries <- function(brand){
+  plastic %>% filter(parent_company == brand) %>%
+    group_by(year) %>% 
+    summarize(countries = n_distinct(country))
+}
+top_brands <- plastic %>% count(parent_company, sort = TRUE) %>%
+  slice_head(n=10) %>%
+  pull(parent_company)
+top_brands
+map_dfr(top_brands, brand_countries, .id = "brand")
+```
+
+

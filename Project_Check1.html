@@ -128,20 +128,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>plastic <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">sample_n</span>(<span class="dv">6</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>      country year       parent_company empty hdpe ldpe  o pet pp ps pvc
-1   Indonesia 2019              Unigold     0    0    2  0   0  0  0   0
-2     Vietnam 2019     Thuc Pham A Chau     0    0    0  1   0  0  0   0
-3 Philippines 2019                Ricoa     0    0    4 74   0  0  0   0
-4       China 2020           Septwolves     0    0    0 40   0  0  0   0
-5 Philippines 2019 Pt. Mayora Indah Tbk     0    0    0  0  26  0  0   0
-6       EMPTY 2019     Serra da Estrela    NA    0    0  0   1  0  0   0
-  grand_total num_events volunteers
-1           2         32       6850
-2           1          4        400
-3          78         20       3751
-4          40          1       2175
-5          26         20       3751
-6           1        145       1416</code></pre>
+<pre><code>                   country year           parent_company empty hdpe ldpe  o pet
+1                   Brazil 2019               Casa Suiça     0    0   NA  0   0
+2                Hong Kong 2019              Shi Zai Niu     0    0    0  1   0
+3              Philippines 2019       Virginia Cheesedog     0    0    0  1   0
+4 United States of America 2019                    Spitz     0    0    0 12   0
+5                    China 2019                Baiweilin    NA   NA   NA  1   0
+6                  Vietnam 2019 Cong Ty Thuc Pham Chau A     0    0    0  0   3
+  pp ps pvc grand_total num_events volunteers
+1  1  0  NA           1          3        419
+2  0  0  NA           1          7         67
+3  0  0   0           1         20       3751
+4  0  0  NA          12         42        740
+5 NA NA  NA           1         48       1439
+6  0  0   0           3          4        400</code></pre>
 </div>
 </div>
 </section>
@@ -171,6 +171,85 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="visualizations" class="level2">
 <h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
 <p><img src="images/visuals.png" class="img-fluid"></p>
+<p>Brand type by country</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>brand_countries <span class="ot">&lt;-</span> <span class="cf">function</span>(df, brand){</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  plastic <span class="sc">%&gt;%</span>  </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(brand <span class="sc">==</span> parent_company) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">distinct</span>(country)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">brand_countries</span>(plastic, <span class="st">"Grand Total"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                           country
+1                        Argentina
+2                        Australia
+3                       Bangladesh
+4                            Benin
+5                           Bhutan
+6                           Brazil
+7                         Bulgaria
+8                     Burkina Faso
+9                         Cameroon
+10                          Canada
+11                           China
+12                        Colombia
+13                   Cote D_ivoire
+14                          Cyprus
+15                         ECUADOR
+16                           EMPTY
+17                          France
+18                         Germany
+19                           Ghana
+20                       Hong Kong
+21                           India
+22                       Indonesia
+23                         Ireland
+24                           Italy
+25                           Japan
+26                           Kenya
+27                          Latvia
+28                      Luxembourg
+29                        Malaysia
+30                        Maldives
+31                          Mexico
+32                      Montenegro
+33                         NIGERIA
+34                     Netherlands
+35                     Philippines
+36                        Portugal
+37                          Rwanda
+38                        Slovenia
+39                    South Africa
+40                           Spain
+41                       Sri Lanka
+42                     Switzerland
+43 Taiwan_ Republic of China (ROC)
+44                        Tanzania
+45                        Thailand
+46                         Tunisia
+47                          Turkey
+48                         Ukraine
+49            United Arab Emirates
+50                  United Kingdom
+51        United States of America
+52                         Vietnam</code></pre>
+</div>
+</div>
 </section>
 
 </main>
