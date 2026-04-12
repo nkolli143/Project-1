@@ -56,7 +56,7 @@ Is there a relationship between plastic waste and a countries economic status (d
 
 
 
-
+summary stats using existing columns:
 
 1)
 How do two brands compare in terms of their global reach, and how similar their distributions of plastic waste across countries?
@@ -122,6 +122,7 @@ results
 Notes: I computed a plastic type diversity index for each country, which measures how evenly plastic waste is spread across the 8 plastic types in the dataset. A higher score means many plastic types were found in roughly equal amounts, while a lower score means one or two types dominated.
 The United Kingdom ranked highest with a score of 1.74, meaning its plastic waste was spread relatively evenly across many material types. Countries with lower scores tended to be dominated by PET, which makes sense given that plastic beverage bottles are one of the most commonly collected items in brand audits.
 
+Summary stats using modified rows:
 3)
 Summary 3 - Plastic Pollution Score Per Company
 
