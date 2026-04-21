@@ -27,6 +27,7 @@ library(glue)
 library(purrr)
 library(tidyr)
 library(readr)
+library(ggplot2)
 ```
 
 
@@ -349,45 +350,31 @@ air_vs_plastic |>
 
 
 ```
+Notes:
+Notes: We filtered out non-company rows such as "Grand Total" and "NULL"entries, then grouped by country and computed the total plastic collected, total volunteers, and average AQI score for each country using `summarize()`. Countries with missing AQI data or zero plastic collected were removed using `filter()`, results were sorted in descending order by total plastic using `arrange()`, and we displayed the top 10 countries using `slice_max()`.
 
-## Notes:
- We filtered out non-company rows such as "Grand Total" and "NULL"entries, then grouped by country and computed the total plastic collected, total volunteers, and average AQI score for each country using `summarize()`. Countries with missing AQI data or zero plastic collected were removed using `filter()`, results were sorted in descending order by total plastic using `arrange()`, and we displayed the top 10 countries using `slice_max()`.
+The results show no clear consistent pattern as the Philippines leads in both plastic collected and has a high AQI of 192, while Nigeria ranks second in plastic but has a very low AQI of 21. This suggests that plastic pollution and air quality are influenced by different factors across countries.
 
-The results show no clear consistent pattern as the Philippines leads in both plastic collected and has a high AQI of 192, while Nigeria ranks second in plastic but has a very low AQI of 21. This suggests that plastic pollution and air quality are influenced by different factors across countries. 
+# Visualization 2:
 
-Description: I wanted to see whether plastic waste per volunteer was related to average PM2.5 concentration across countries. It helps show whether countries with a greater plastic burden relative to cleanup effort also have worse air quality.
-
-```{r}
-pm25_vs_plastic <- pollution_data |>
-  filter(!parent_company %in% c("Grand Total", "Unbranded", "null", "NULL")) |>
-  group_by(country) |>
-  summarize(
-    total_plastic = sum(grand_total, na.rm = TRUE),
-    total_volunteers = sum(volunteers, na.rm = TRUE),
-    avg_pm25 = mean(`PM2.5_concentration`, na.rm = TRUE)
-  ) |>
-  mutate(
-    # calculate plastic waste per volunteer
-    plastic_per_volunteer = total_plastic / total_volunteers
-  ) |>
-  filter(total_volunteers > 0) |>
-  filter(!is.na(avg_pm25)) |>
-  filter(!is.na(plastic_per_volunteer))
-```
-
-Plot related to this:
+## Description:
+Description: I wanted to see the relationship between average air quality and total plastic waste across countries. We saw in the previous summary that there was not a consistent pattern between plastic pollution and air quality. However, I wanted to see if overall countries with higher levels of plastic pollution also tend to have worse air quality using a a scatter plot and a linear model.
 
 ```{r}
-ggplot(pm25_vs_plastic, aes(x = plastic_per_volunteer, y = avg_pm25)) +
-  geom_point(color = "lightgreen", size = 2) +
-  geom_smooth(method = "lm", se = FALSE, color = "blue") +
-labs(
-  title = "Plastic Waste per Volunteer vs PM2.5 Concentration",
-    x = "Plastic Waste per Volunteer",
-    y = "Average PM2.5 Concentration"
+ggplot(air_vs_plastic, aes(x = total_plastic, y = avg_aqi)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) + 
+  labs(
+    title = "Plastic Waste vs Average AQI by Country",
+    x = "Total Plastic Waste",
+    y = "Average AQI"
   ) +
   theme_minimal()
-```
-Notes:
-This graph shows the relationship between plastic waste per volunteer and the average PM2.5 concentration across countries. In the code I grouped the data by country, calculated total plastic waste, total volunteers, and average PM2.5, then created a new variable for plastic waste per volunteer. In the graph each point represents one country and the line of best fit shows the overall trend between the two variables. The points are pretty spread out so there does not appear to be a very strong relationship between plastic waste per volunteer and PM2.5 concentration. But the slight upward slope in the line shows that countries with more plastic waste per volunteer may have somewhat higher PM2.5 levels.
 
+model <- lm(avg_aqi ~ total_plastic, data = air_vs_plastic)
+summary(model)
+
+
+```
+
+Notes: The scatterplot shows that there is very little relationship between total plastic waste and average AQI across countries. Even thought the fitted regression line has a slight negative slope, it is almost flat, which shows that plastic waste is not a very good predictor of air quality. The linear model confirmas this through the large p-value of 0.888 and the coefficient for total_plastic being very close to zero which shows that the relationship is not statistically significant. Also, the R-squared value is very small, which means that total plastic waste explains almost none of the variation in average AQI across countries. These results suggest that plastic waste and air quality do not appear to have a meaningful linear relationship at the country level in this sample.
