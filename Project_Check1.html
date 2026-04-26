@@ -174,19 +174,19 @@ Attaching package: 'jsonlite'</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>plastics <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">sample_n</span>(<span class="dv">6</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>    country year parent_company empty hdpe ldpe o pet pp ps pvc grand_total
-1     EMPTY 2019          Mac's    NA    0    0 1   0  0  0   0           1
-2  Thailand 2019  prima mineral     0    0   NA 0  NA NA NA   0           0
-3     China 2019      Zhenxiang    NA   NA   NA 1   0 NA NA  NA           1
-4   Ukraine 2019   Truskavetska    NA    0    0 0   1  0  0  NA           1
-5 Indonesia 2019       Pt Sosro     0    0    0 0   7  0  0   0           7
-6  Cameroon 2019        vhuobtc    NA    0    0 0  12  0  0   0          12
+<pre><code>   country year   parent_company empty hdpe ldpe o pet pp ps pvc grand_total
+1  NIGERIA 2019        Good Mama     0    0    1 0   0  0  0   0           1
+2    China 2020           Wolong     0    0    0 1   0  0  0   0           1
+3    EMPTY 2019   Oxford Biscuit    NA    0   21 0   0  0  0   0          21
+4  NIGERIA 2019 Voltic (Nig) Ltd     0    0    0 0   5  0  0   0           5
+5    EMPTY 2019          vitalis    NA    0    0 0  10  0  0   0          10
+6 Cameroon 2019       Girlfriend    NA    4    0 0   0  0  0   0           4
   num_events volunteers
-1        145       1416
-2          5        374
-3         48       1439
-4          7        114
-5         32       6850
+1         14       1648
+2          1       2175
+3        145       1416
+4         14       1648
+5        145       1416
 6         10        387</code></pre>
 </div>
 </div>
@@ -324,23 +324,23 @@ Attaching package: 'jsonlite'</code></pre>
 <span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_score)) <span class="sc">|&gt;</span></span>
 <span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a>  gt<span class="sc">::</span><span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="ziavhwpfvz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ziavhwpfvz table {
+<div id="qnkcbfntmy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qnkcbfntmy table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ziavhwpfvz thead, #ziavhwpfvz tbody, #ziavhwpfvz tfoot, #ziavhwpfvz tr, #ziavhwpfvz td, #ziavhwpfvz th {
+#qnkcbfntmy thead, #qnkcbfntmy tbody, #qnkcbfntmy tfoot, #qnkcbfntmy tr, #qnkcbfntmy td, #qnkcbfntmy th {
   border-style: none;
 }
 
-#ziavhwpfvz p {
+#qnkcbfntmy p {
   margin: 0;
   padding: 0;
 }
 
-#ziavhwpfvz .gt_table {
+#qnkcbfntmy .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -366,12 +366,12 @@ Attaching package: 'jsonlite'</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_caption {
+#qnkcbfntmy .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ziavhwpfvz .gt_title {
+#qnkcbfntmy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -383,7 +383,7 @@ Attaching package: 'jsonlite'</code></pre>
   border-bottom-width: 0;
 }
 
-#ziavhwpfvz .gt_subtitle {
+#qnkcbfntmy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -395,7 +395,7 @@ Attaching package: 'jsonlite'</code></pre>
   border-top-width: 0;
 }
 
-#ziavhwpfvz .gt_heading {
+#qnkcbfntmy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -407,13 +407,13 @@ Attaching package: 'jsonlite'</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_bottom_border {
+#qnkcbfntmy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_col_headings {
+#qnkcbfntmy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -428,7 +428,7 @@ Attaching package: 'jsonlite'</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_col_heading {
+#qnkcbfntmy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -448,7 +448,7 @@ Attaching package: 'jsonlite'</code></pre>
   overflow-x: hidden;
 }
 
-#ziavhwpfvz .gt_column_spanner_outer {
+#qnkcbfntmy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -460,15 +460,15 @@ Attaching package: 'jsonlite'</code></pre>
   padding-right: 4px;
 }
 
-#ziavhwpfvz .gt_column_spanner_outer:first-child {
+#qnkcbfntmy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ziavhwpfvz .gt_column_spanner_outer:last-child {
+#qnkcbfntmy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ziavhwpfvz .gt_column_spanner {
+#qnkcbfntmy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -480,11 +480,11 @@ Attaching package: 'jsonlite'</code></pre>
   width: 100%;
 }
 
-#ziavhwpfvz .gt_spanner_row {
+#qnkcbfntmy .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ziavhwpfvz .gt_group_heading {
+#qnkcbfntmy .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -510,7 +510,7 @@ Attaching package: 'jsonlite'</code></pre>
   text-align: left;
 }
 
-#ziavhwpfvz .gt_empty_group_heading {
+#qnkcbfntmy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -525,15 +525,15 @@ Attaching package: 'jsonlite'</code></pre>
   vertical-align: middle;
 }
 
-#ziavhwpfvz .gt_from_md > :first-child {
+#qnkcbfntmy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ziavhwpfvz .gt_from_md > :last-child {
+#qnkcbfntmy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ziavhwpfvz .gt_row {
+#qnkcbfntmy .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -552,7 +552,7 @@ Attaching package: 'jsonlite'</code></pre>
   overflow-x: hidden;
 }
 
-#ziavhwpfvz .gt_stub {
+#qnkcbfntmy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -565,7 +565,7 @@ Attaching package: 'jsonlite'</code></pre>
   padding-right: 5px;
 }
 
-#ziavhwpfvz .gt_stub_row_group {
+#qnkcbfntmy .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -579,15 +579,15 @@ Attaching package: 'jsonlite'</code></pre>
   vertical-align: top;
 }
 
-#ziavhwpfvz .gt_row_group_first td {
+#qnkcbfntmy .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ziavhwpfvz .gt_row_group_first th {
+#qnkcbfntmy .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ziavhwpfvz .gt_summary_row {
+#qnkcbfntmy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -597,16 +597,16 @@ Attaching package: 'jsonlite'</code></pre>
   padding-right: 5px;
 }
 
-#ziavhwpfvz .gt_first_summary_row {
+#qnkcbfntmy .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_first_summary_row.thick {
+#qnkcbfntmy .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ziavhwpfvz .gt_last_summary_row {
+#qnkcbfntmy .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -616,7 +616,7 @@ Attaching package: 'jsonlite'</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_grand_summary_row {
+#qnkcbfntmy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -626,7 +626,7 @@ Attaching package: 'jsonlite'</code></pre>
   padding-right: 5px;
 }
 
-#ziavhwpfvz .gt_first_grand_summary_row {
+#qnkcbfntmy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -636,7 +636,7 @@ Attaching package: 'jsonlite'</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_last_grand_summary_row_top {
+#qnkcbfntmy .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -646,11 +646,11 @@ Attaching package: 'jsonlite'</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_striped {
+#qnkcbfntmy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ziavhwpfvz .gt_table_body {
+#qnkcbfntmy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -659,7 +659,7 @@ Attaching package: 'jsonlite'</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_footnotes {
+#qnkcbfntmy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -673,7 +673,7 @@ Attaching package: 'jsonlite'</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_footnote {
+#qnkcbfntmy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -682,7 +682,7 @@ Attaching package: 'jsonlite'</code></pre>
   padding-right: 5px;
 }
 
-#ziavhwpfvz .gt_sourcenotes {
+#qnkcbfntmy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -696,7 +696,7 @@ Attaching package: 'jsonlite'</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ziavhwpfvz .gt_sourcenote {
+#qnkcbfntmy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -704,72 +704,72 @@ Attaching package: 'jsonlite'</code></pre>
   padding-right: 5px;
 }
 
-#ziavhwpfvz .gt_left {
+#qnkcbfntmy .gt_left {
   text-align: left;
 }
 
-#ziavhwpfvz .gt_center {
+#qnkcbfntmy .gt_center {
   text-align: center;
 }
 
-#ziavhwpfvz .gt_right {
+#qnkcbfntmy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ziavhwpfvz .gt_font_normal {
+#qnkcbfntmy .gt_font_normal {
   font-weight: normal;
 }
 
-#ziavhwpfvz .gt_font_bold {
+#qnkcbfntmy .gt_font_bold {
   font-weight: bold;
 }
 
-#ziavhwpfvz .gt_font_italic {
+#qnkcbfntmy .gt_font_italic {
   font-style: italic;
 }
 
-#ziavhwpfvz .gt_super {
+#qnkcbfntmy .gt_super {
   font-size: 65%;
 }
 
-#ziavhwpfvz .gt_footnote_marks {
+#qnkcbfntmy .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ziavhwpfvz .gt_asterisk {
+#qnkcbfntmy .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ziavhwpfvz .gt_indent_1 {
+#qnkcbfntmy .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ziavhwpfvz .gt_indent_2 {
+#qnkcbfntmy .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ziavhwpfvz .gt_indent_3 {
+#qnkcbfntmy .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ziavhwpfvz .gt_indent_4 {
+#qnkcbfntmy .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ziavhwpfvz .gt_indent_5 {
+#qnkcbfntmy .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ziavhwpfvz .katex-display {
+#qnkcbfntmy .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ziavhwpfvz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#qnkcbfntmy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -895,23 +895,11 @@ Attaching package: 'jsonlite'</code></pre>
 <p>Notes: I grouped the data by country and year, summed total plastic and summed the total of plastic type, and then calculated proportions. I used map() to iterate through each plastic type and combined the results, then reshaped the data to compare types side by side.</p>
 <p>Through this data I can see that in each country and year a few specific plastic types make up most of the total plastic waste, rather than contributing equally. For example, in Armenia the plastic type pet made up all of the country’s plastic waste</p>
 </section>
-<section id="checkpoint-3" class="level2">
-<h2 class="anchored" data-anchor-id="checkpoint-3">Checkpoint 3</h2>
-</section>
-<section id="new-data-country-capitals" class="level1">
-<h1>New data: <a href="https://www.kaggle.com/datasets/nikitagrec/world-capitals-gps?resource=download">Country Capitals</a></h1>
-<p>Capitals of Countries: <a href="https://www.kaggle.com/datasets/nikitagrec/world-capitals-gps" class="uri">https://www.kaggle.com/datasets/nikitagrec/world-capitals-gps</a> from Kaggle</p>
-<p>download data as zip file from Kaggle extract the csv file and store it in the same directory as the RProject file</p>
-</section>
-<section id="description" class="level1">
-<h1>Description:</h1>
-<p>This data contains geographical information for countries and their capital cities worldwide. It includes the country name, country code, capital city name, and the latitude and longitude coordinates of each capital. We will use this data as a bridge dataset to connect our plastic pollution data to the air quality API, which requires geographic cooordinates as input.</p>
-<p>Air Quality API <a href="https://api-ninjas.com/api/airquality" class="uri">https://api-ninjas.com/api/airquality</a></p>
-<p>from API Ninja</p>
-</section>
-<section id="description-1" class="level1">
-<h1>Description:</h1>
-<p>This dataset was acquired using the API Ninjas Air Quality API and returns current air quality measurements for a given latitude and longitude. For each country’s capital city, the API returned measurements for several pollutants including CO, NO2, O3, PM2.5, PM10, and SO2, as well as an overall AQI (Air Quality Index) score. With this data, we can investigate whether countries with higher levels of plastic pollution also tend to have worse air quality, potentially reflecting broader environmental mismanagement.</p>
+<section id="checkpoint-3" class="level1">
+<h1>Checkpoint 3</h1>
+<section id="new-data-country-capitals" class="level2">
+<h2 class="anchored" data-anchor-id="new-data-country-capitals">New data: <a href="https://www.kaggle.com/datasets/nikitagrec/world-capitals-gps?resource=download">Country Capitals</a></h2>
+<p><strong>Description: </strong> This data contains geographical information for countries and their capital cities worldwide. It includes the country name, country code, capital city name, and the latitude and longitude coordinates of each capital. We will use this data as a bridge dataset to connect our plastic pollution data to the air quality API, which requires geographic cooordinates as input.</p>
 <p>Here’s a snippet of the data set:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>country_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"concap.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -952,69 +940,58 @@ dbl (2): CapitalLatitude, CapitalLongitude
 <span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>pollution_data <span class="ot">&lt;-</span> <span class="fu">left_join</span>(plastics, capitals, <span class="at">by =</span> <span class="st">"country"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="new-data-air-quality-api" class="level1">
-<h1>New Data: <a href="https://api-ninjas.com/api/airquality">Air Quality API</a></h1>
+<section id="new-data-air-quality-api" class="level2">
+<h2 class="anchored" data-anchor-id="new-data-air-quality-api">New Data: <a href="https://api-ninjas.com/api/airquality">Air Quality API</a></h2>
+<p><strong>Description:</strong> This dataset was acquired using the API Ninjas Air Quality API and returns current air quality measurements for a given latitude and longitude. For each country’s capital city, the API returned measurements for several pollutants including CO, NO2, O3, PM2.5, PM10, and SO2, as well as an overall AQI (Air Quality Index) score. With this data, we can investigate whether countries with higher levels of plastic pollution also tend to have worse air quality, potentially reflecting broader environmental mismanagement.</p>
 <p>We made a custom function get_air_quality() that pulls air quality data for a city from the API using its latitude and longitude coordinates. We then used the map() function to iterate over each capital city from the Capital Cities data set from above.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>api_key <span class="ot">&lt;-</span> <span class="st">"Ak2gLRREowWx6UZfWH6JrL1RFzDR0JMdqoqih4ji"</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># function to pull data from API</span></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>get_air_quality <span class="ot">&lt;-</span> <span class="cf">function</span>(lat, lon) {</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># function to pull data from API</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>get_air_quality <span class="ot">&lt;-</span> <span class="cf">function</span>(lat, lon) {</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  base_url <span class="ot">&lt;-</span> <span class="st">"https://api.api-ninjas.com/v1/airquality"</span></span>
 <span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  base_url <span class="ot">&lt;-</span> <span class="st">"https://api.api-ninjas.com/v1/airquality"</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  my_url <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">"{base_url}?lat={lat}&amp;lon={lon}"</span>)</span>
 <span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  my_url <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">"{base_url}?lat={lat}&amp;lon={lon}"</span>)</span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  my_city <span class="ot">&lt;-</span> <span class="fu">GET</span>(</span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>    my_url,</span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">add_headers</span>(<span class="st">"X-Api-Key"</span> <span class="ot">=</span> api_key)</span>
-<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Check for successful response</span></span>
-<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">status_code</span>(my_city) <span class="sc">!=</span> <span class="dv">200</span>) <span class="fu">return</span>(<span class="cn">NA</span>)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  my_city <span class="ot">&lt;-</span> <span class="fu">GET</span>(</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>    my_url,</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">add_headers</span>(<span class="st">"X-Api-Key"</span> <span class="ot">=</span> api_key)</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Check for successful response</span></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">status_code</span>(my_city) <span class="sc">!=</span> <span class="dv">200</span>) <span class="fu">return</span>(<span class="cn">NA</span>)</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>  my_data <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(<span class="fu">rawToChar</span>(my_city<span class="sc">$</span>content))</span>
 <span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>  my_data <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(<span class="fu">rawToChar</span>(my_city<span class="sc">$</span>content))</span>
-<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span> (my_data)</span>
-<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a><span class="co"># to prevent crashing in case of failed API value</span></span>
-<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a>safe_air_quality <span class="ot">&lt;-</span> <span class="fu">possibly</span>(</span>
-<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a>  get_air_quality,</span>
-<span id="cb27-26"><a href="#cb27-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">otherwise =</span> <span class="fu">list</span>(</span>
-<span id="cb27-27"><a href="#cb27-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">overall_aqi =</span> <span class="cn">NA</span>,</span>
-<span id="cb27-28"><a href="#cb27-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">CO =</span> <span class="fu">list</span>(<span class="at">concentration =</span> <span class="cn">NA</span>, <span class="at">aqi =</span> <span class="cn">NA</span>),</span>
-<span id="cb27-29"><a href="#cb27-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">NO2 =</span> <span class="fu">list</span>(<span class="at">concentration =</span> <span class="cn">NA</span>, <span class="at">aqi =</span> <span class="cn">NA</span>),</span>
-<span id="cb27-30"><a href="#cb27-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">O3 =</span> <span class="fu">list</span>(<span class="at">concentration =</span> <span class="cn">NA</span>, <span class="at">aqi =</span> <span class="cn">NA</span>),</span>
-<span id="cb27-31"><a href="#cb27-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">SO2 =</span> <span class="fu">list</span>(<span class="at">concentration =</span> <span class="cn">NA</span>, <span class="at">aqi =</span> <span class="cn">NA</span>),</span>
-<span id="cb27-32"><a href="#cb27-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">PM2.5 =</span> <span class="fu">list</span>(<span class="at">concentration =</span> <span class="cn">NA</span>, <span class="at">aqi =</span> <span class="cn">NA</span>),</span>
-<span id="cb27-33"><a href="#cb27-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">PM10 =</span> <span class="fu">list</span>(<span class="at">concentration =</span> <span class="cn">NA</span>, <span class="at">aqi =</span> <span class="cn">NA</span>)</span>
-<span id="cb27-34"><a href="#cb27-34" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb27-35"><a href="#cb27-35" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-36"><a href="#cb27-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-37"><a href="#cb27-37" aria-hidden="true" tabindex="-1"></a><span class="co"># iterate function for all capital cities</span></span>
-<span id="cb27-38"><a href="#cb27-38" aria-hidden="true" tabindex="-1"></a>unique_capitals <span class="ot">&lt;-</span> pollution_data <span class="sc">|&gt;</span> </span>
-<span id="cb27-39"><a href="#cb27-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(country, capital_lat, capital_long) <span class="sc">|&gt;</span> </span>
-<span id="cb27-40"><a href="#cb27-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(capital_lat), <span class="sc">!</span><span class="fu">is.na</span>(capital_long)) </span>
-<span id="cb27-41"><a href="#cb27-41" aria-hidden="true" tabindex="-1"></a><span class="co"># create tibble of air quality data</span></span>
-<span id="cb27-42"><a href="#cb27-42" aria-hidden="true" tabindex="-1"></a>air_data <span class="ot">&lt;-</span> unique_capitals <span class="sc">|&gt;</span> </span>
-<span id="cb27-43"><a href="#cb27-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb27-44"><a href="#cb27-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">air_quality =</span> <span class="fu">map2</span>(capital_lat, capital_long, safe_air_quality)</span>
-<span id="cb27-45"><a href="#cb27-45" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span> </span>
-<span id="cb27-46"><a href="#cb27-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(air_quality)</span>
-<span id="cb27-47"><a href="#cb27-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-48"><a href="#cb27-48" aria-hidden="true" tabindex="-1"></a><span class="co"># separate list objects into "pollutant"_concentration" and "pollutant"_aqi columns</span></span>
-<span id="cb27-49"><a href="#cb27-49" aria-hidden="true" tabindex="-1"></a>air_data <span class="ot">&lt;-</span> air_data <span class="sc">|&gt;</span></span>
-<span id="cb27-50"><a href="#cb27-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(CO, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb27-51"><a href="#cb27-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(NO2, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb27-52"><a href="#cb27-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(O3, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb27-53"><a href="#cb27-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(PM10, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb27-54"><a href="#cb27-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(<span class="st">`</span><span class="at">PM2.5</span><span class="st">`</span>, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb27-55"><a href="#cb27-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(SO2, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb27-56"><a href="#cb27-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>capital_lat, <span class="sc">-</span>capital_long)</span>
-<span id="cb27-57"><a href="#cb27-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-58"><a href="#cb27-58" aria-hidden="true" tabindex="-1"></a><span class="co"># create .csv file for air_data</span></span>
-<span id="cb27-59"><a href="#cb27-59" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(air_data, <span class="st">"air_data.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span> (my_data)</span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a><span class="co"># to prevent crashing in case of failed API value</span></span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>safe_air_quality <span class="ot">&lt;-</span> <span class="fu">possibly</span>(get_air_quality, <span class="at">otherwise =</span> <span class="cn">NA</span>)</span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a><span class="co"># iterate function for all capital cities</span></span>
+<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a>unique_capitals <span class="ot">&lt;-</span> pollution_data <span class="sc">|&gt;</span> </span>
+<span id="cb27-26"><a href="#cb27-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(country, capital_lat, capital_long) <span class="sc">|&gt;</span> </span>
+<span id="cb27-27"><a href="#cb27-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(capital_lat), <span class="sc">!</span><span class="fu">is.na</span>(capital_long)) </span>
+<span id="cb27-28"><a href="#cb27-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-29"><a href="#cb27-29" aria-hidden="true" tabindex="-1"></a><span class="co"># create tibble of air quality data</span></span>
+<span id="cb27-30"><a href="#cb27-30" aria-hidden="true" tabindex="-1"></a>air_data <span class="ot">&lt;-</span> unique_capitals <span class="sc">|&gt;</span> </span>
+<span id="cb27-31"><a href="#cb27-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb27-32"><a href="#cb27-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">air_quality =</span> <span class="fu">map2</span>(capital_lat, capital_long, safe_air_quality)</span>
+<span id="cb27-33"><a href="#cb27-33" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb27-34"><a href="#cb27-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(air_quality)</span>
+<span id="cb27-35"><a href="#cb27-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-36"><a href="#cb27-36" aria-hidden="true" tabindex="-1"></a><span class="co"># separate list objects into "pollutant"_concentration" and "pollutant"_aqi columns</span></span>
+<span id="cb27-37"><a href="#cb27-37" aria-hidden="true" tabindex="-1"></a>air_data <span class="ot">&lt;-</span> air_data <span class="sc">|&gt;</span></span>
+<span id="cb27-38"><a href="#cb27-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(CO, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-39"><a href="#cb27-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(NO2, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-40"><a href="#cb27-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(O3, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-41"><a href="#cb27-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(PM10, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-42"><a href="#cb27-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(<span class="st">`</span><span class="at">PM2.5</span><span class="st">`</span>, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-43"><a href="#cb27-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(SO2, <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-44"><a href="#cb27-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>capital_lat, <span class="sc">-</span>capital_long)</span>
+<span id="cb27-45"><a href="#cb27-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-46"><a href="#cb27-46" aria-hidden="true" tabindex="-1"></a><span class="co"># create .csv file for air_data</span></span>
+<span id="cb27-47"><a href="#cb27-47" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(air_data, <span class="st">"air_data.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read in air_data</span></span>
@@ -1030,62 +1007,95 @@ dbl (13): CO_concentration, CO_aqi, NO2_concentration, NO2_aqi, O3_concentra...
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># combine</span></span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>pollution_data <span class="ot">&lt;-</span> <span class="fu">left_join</span>(pollution_data, air_data, <span class="at">by =</span> <span class="st">"country"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>pollution_data <span class="ot">&lt;-</span> <span class="fu">left_join</span>(pollution_data, air_data, <span class="at">by =</span> <span class="st">"country"</span>)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(pollution_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    country year        parent_company empty hdpe ldpe   o  pet  pp  ps pvc
+1 Argentina 2019           Grand Total     0  215   55 607 1376 281 116  18
+2 Argentina 2019             Unbranded     0  155   50 532  848 122 114  17
+3 Argentina 2019 The Coca-Cola Company     0    0    0   0  222  35   0   0
+4 Argentina 2019                 Secco     0    0    0   0   39   4   0   0
+5 Argentina 2019            Doble Cola     0    0    0   0   38   0   0   0
+6 Argentina 2019                Pritty     0    0    0   0   22   7   0   0
+  grand_total num_events volunteers capital_city capital_lat capital_long
+1        2668          4        243 Buenos Aires   -34.58333    -58.66667
+2        1838          4        243 Buenos Aires   -34.58333    -58.66667
+3         257          4        243 Buenos Aires   -34.58333    -58.66667
+4          43          4        243 Buenos Aires   -34.58333    -58.66667
+5          38          4        243 Buenos Aires   -34.58333    -58.66667
+6          29          4        243 Buenos Aires   -34.58333    -58.66667
+  CO_concentration CO_aqi NO2_concentration NO2_aqi O3_concentration O3_aqi
+1           147.69      1              2.64       3            28.52     24
+2           147.69      1              2.64       3            28.52     24
+3           147.69      1              2.64       3            28.52     24
+4           147.69      1              2.64       3            28.52     24
+5           147.69      1              2.64       3            28.52     24
+6           147.69      1              2.64       3            28.52     24
+  SO2_concentration SO2_aqi PM2.5_concentration PM2.5_aqi PM10_concentration
+1              0.11       0                4.71        15               6.65
+2              0.11       0                4.71        15               6.65
+3              0.11       0                4.71        15               6.65
+4              0.11       0                4.71        15               6.65
+5              0.11       0                4.71        15               6.65
+6              0.11       0                4.71        15               6.65
+  PM10_aqi overall_aqi
+1        6          24
+2        6          24
+3        6          24
+4        6          24
+5        6          24
+6        6          24</code></pre>
+</div>
 </div>
 </section>
-<section id="summaryvisualization-1" class="level1">
-<h1>Summary/visualization 1</h1>
-<section id="description-2" class="level2">
-<h2 class="anchored" data-anchor-id="description-2">Description:</h2>
-<p>We want to investigate whether countries with more plastic pollution also tend to have worse air quality. We grouped the meta dataset by country and computed the total plastic collected and average overall AQI score for each country. The table displays the top 10 countries by total plastic collected along with their corresponding air quality index, where a higher AQI indicates worse air quality. This allows us to see whether the most plastic-polluted countries also tend to have a poorer air quality.</p>
+<section id="summary-1" class="level2">
+<h2 class="anchored" data-anchor-id="summary-1">Summary 1</h2>
+<p><strong>Description:</strong> We want to investigate whether countries with more plastic pollution also tend to have worse air quality. We grouped the meta dataset by country and computed the total plastic collected and average overall AQI score for each country. The table displays the top 10 countries by total plastic collected along with their corresponding air quality index, where a higher AQI indicates worse air quality. This allows us to see whether the most plastic-polluted countries also tend to have a poorer air quality.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>air_vs_plastic <span class="ot">&lt;-</span> pollution_data <span class="sc">|&gt;</span></span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>parent_company <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Grand Total"</span>, <span class="st">"Unbranded"</span>, <span class="st">"null"</span>, <span class="st">"NULL"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(country) <span class="sc">|&gt;</span></span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_plastic =</span> <span class="fu">sum</span>(grand_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_volunteers =</span> <span class="fu">sum</span>(volunteers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_aqi =</span> <span class="fu">mean</span>(overall_aqi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(avg_aqi), total_plastic <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
-<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_plastic))</span>
-<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>air_vs_plastic <span class="sc">|&gt;</span></span>
-<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(total_plastic, <span class="at">n =</span> <span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>air_vs_plastic <span class="ot">&lt;-</span> pollution_data <span class="sc">|&gt;</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>parent_company <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Grand Total"</span>, <span class="st">"Unbranded"</span>, <span class="st">"null"</span>, <span class="st">"NULL"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(country) <span class="sc">|&gt;</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_plastic =</span> <span class="fu">sum</span>(grand_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_volunteers =</span> <span class="fu">sum</span>(volunteers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_aqi =</span> <span class="fu">mean</span>(overall_aqi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(avg_aqi), total_plastic <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_plastic))</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>air_vs_plastic <span class="sc">|&gt;</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(total_plastic, <span class="at">n =</span> <span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 4
    country      total_plastic total_volunteers avg_aqi
    &lt;chr&gt;                &lt;int&gt;            &lt;int&gt;   &lt;dbl&gt;
- 1 Philippines          58094          2767429     121
- 2 Nigeria              21834           698967      24
- 3 Kenya                14522           184128      14
- 4 India                14478           140354      82
+ 1 Philippines          58094          2767429     195
+ 2 Nigeria              21834           698967      22
+ 3 Kenya                14522           184128      24
+ 4 India                14478           140354     129
  5 Indonesia            12843          4457364      42
- 6 Vietnam               9007           273802      91
+ 6 Vietnam               9007           273802     100
  7 Cameroon              8253            58050       5
- 8 Burkina Faso          7583             8229      33
- 9 Ukraine               7383           126042      85
-10 China                 5791          1363419     168</code></pre>
+ 8 Burkina Faso          7583             8229      84
+ 9 Ukraine               7383           126042     116
+10 China                 5791          1363419     219</code></pre>
 </div>
 </div>
-<p>Notes: Notes: We filtered out non-company rows such as “Grand Total” and “NULL”entries, then grouped by country and computed the total plastic collected, total volunteers, and average AQI score for each country using <code>summarize()</code>. Countries with missing AQI data or zero plastic collected were removed using <code>filter()</code>, results were sorted in descending order by total plastic using <code>arrange()</code>, and we displayed the top 10 countries using <code>slice_max()</code>.</p>
+<p>Notes: We filtered out non-company rows such as “Grand Total” and “NULL”entries, then grouped by country and computed the total plastic collected, total volunteers, and average AQI score for each country using <code>summarize()</code>. Countries with missing AQI data or zero plastic collected were removed using <code>filter()</code>, results were sorted in descending order by total plastic using <code>arrange()</code>, and we displayed the top 10 countries using <code>slice_max()</code>.</p>
 <p>The results show no clear consistent pattern as the Philippines leads in both plastic collected and has a high AQI of 192, while Nigeria ranks second in plastic but has a very low AQI of 21. This suggests that plastic pollution and air quality are influenced by different factors across countries.</p>
 </section>
-</section>
-<section id="visualization-2" class="level1">
-<h1>Visualization 2:</h1>
-<section id="description-3" class="level2">
-<h2 class="anchored" data-anchor-id="description-3">Description:</h2>
-<p>Description: I wanted to see the relationship between average air quality and total plastic waste across countries. We saw in the previous summary that there was not a consistent pattern between plastic pollution and air quality. However, I wanted to see if overall countries with higher levels of plastic pollution also tend to have worse air quality using a a scatter plot and a linear model.</p>
+<section id="visualization-2" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-2">Visualization 2</h2>
+<p><strong>Description:</strong> Description: I wanted to see the relationship between average air quality and total plastic waste across countries. We saw in the previous summary that there was not a consistent pattern between plastic pollution and air quality. However, I wanted to see if overall countries with higher levels of plastic pollution also tend to have worse air quality using a a scatter plot and a linear model.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(air_vs_plastic, <span class="fu">aes</span>(<span class="at">x =</span> total_plastic, <span class="at">y =</span> avg_aqi)) <span class="sc">+</span> </span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Plastic Waste vs Average AQI by Country"</span>,</span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Total Plastic Waste"</span>,</span>
-<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Average AQI"</span></span>
-<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(air_vs_plastic, <span class="fu">aes</span>(<span class="at">x =</span> total_plastic, <span class="at">y =</span> avg_aqi)) <span class="sc">+</span> </span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Plastic Waste vs Average AQI by Country"</span>,</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Total Plastic Waste"</span>,</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Average AQI"</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
@@ -1096,8 +1106,8 @@ dbl (13): CO_concentration, CO_aqi, NO2_concentration, NO2_aqi, O3_concentra...
 </figure>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(avg_aqi <span class="sc">~</span> total_plastic, <span class="at">data =</span> air_vs_plastic)</span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(avg_aqi <span class="sc">~</span> total_plastic, <span class="at">data =</span> air_vs_plastic)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -1105,21 +1115,694 @@ lm(formula = avg_aqi ~ total_plastic, data = air_vs_plastic)
 
 Residuals:
    Min     1Q Median     3Q    Max 
--67.35 -40.22 -12.78  29.05 127.67 
+-80.27 -52.82 -14.96  41.97 143.40 
 
 Coefficients:
-                Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)   73.3306706  7.7207849   9.498 2.86e-13 ***
-total_plastic -0.0001190  0.0008378  -0.142    0.888    
+               Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)   7.759e+01  8.957e+00   8.662 6.36e-12 ***
+total_plastic 9.298e-04  9.720e-04   0.957    0.343    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 53.59 on 56 degrees of freedom
-Multiple R-squared:  0.00036,   Adjusted R-squared:  -0.01749 
-F-statistic: 0.02017 on 1 and 56 DF,  p-value: 0.8876</code></pre>
+Residual standard error: 62.17 on 56 degrees of freedom
+Multiple R-squared:  0.01608,   Adjusted R-squared:  -0.001493 
+F-statistic: 0.915 on 1 and 56 DF,  p-value: 0.3429</code></pre>
 </div>
 </div>
-<p>Notes: The scatterplot shows that there is very little relationship between total plastic waste and average AQI across countries. Even thought the fitted regression line has a slight negative slope, it is almost flat, which shows that plastic waste is not a very good predictor of air quality. The linear model confirmas this through the large p-value of 0.888 and the coefficient for total_plastic being very close to zero which shows that the relationship is not statistically significant. Also, the R-squared value is very small, which means that total plastic waste explains almost none of the variation in average AQI across countries. These results suggest that plastic waste and air quality do not appear to have a meaningful linear relationship at the country level in this sample.</p>
+<p>Notes: The scatterplot shows that there is a relationship between total plastic waste and average AQI across countries. Even thought the fitted regression line has a positive slope, it only has a slight upward trend, which shows that plastic waste is not a very good predictor of air quality. The linear model confirms this through the large p-value of 0.3429 and the coefficient for total_plastic being very close to zero which shows that the relationship is not statistically significant. Also, the R-squared value is very small, which means that total plastic waste explains almost none of the variation in average AQI across countries. These results suggest that plastic waste and air quality do not appear to have a meaningful linear relationship at the country level in this sample.</p>
+</section>
+</section>
+<section id="checkpoint-4" class="level1">
+<h1>Checkpoint 4:</h1>
+<p><strong>Visualization 1</strong> Description: I wanted to see the relationship between average air quality and total plastic waste across countries. We saw in the previous summary that there was a relationship between air quality and total plastic. There were a lot of outliers, so in this graph, I wanted to adjust for the outliers by getting rid of the outliers in total plastic. I wanted to see if overall countries with higher levels of plastic pollution also tend to have worse air quality using a hexbin plot and a linear model after adjusting for outliers.</p>
+<p>Is plastic waste associated with air quality across countries?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>Q1 <span class="ot">&lt;-</span> <span class="fu">quantile</span>(air_vs_plastic<span class="sc">$</span>total_plastic, <span class="fl">0.25</span>)</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>Q3 <span class="ot">&lt;-</span> <span class="fu">quantile</span>(air_vs_plastic<span class="sc">$</span>total_plastic, <span class="fl">0.75</span>)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>IQR <span class="ot">&lt;-</span> Q3 <span class="sc">-</span> Q1</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> air_vs_plastic <span class="sc">|&gt;</span> </span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>         <span class="fu">filter</span>(</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>           total_plastic <span class="sc">&gt;=</span> Q1 <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> IQR, </span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>           total_plastic <span class="sc">&lt;=</span> Q3 <span class="sc">+</span> <span class="fl">1.5</span> <span class="sc">*</span> IQR), </span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> total_plastic, <span class="at">y =</span> avg_aqi)</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>       ) <span class="sc">+</span></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> avg_aqi), <span class="at">size =</span> <span class="dv">3</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">color =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Association between Plastic Waste and Air Quality across Countries"</span>,</span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Each point represents one country. The red line shows the linear trend"</span>,</span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Total Plastic Waste"</span>,</span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Average Air Quality Index (AQI)"</span>,</span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">alt =</span> <span class="st">"Scatter plot showing the relationship between total plastic waste and average air quality index    across countries. Each point represents a country. A red linear trend line slopes slightly downward, showing  a weak negative relationship between plastic waste and air quality."</span></span>
+<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-20"><a href="#cb38-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb38-21"><a href="#cb38-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb38-22"><a href="#cb38-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"Arial"</span>),</span>
+<span id="cb38-23"><a href="#cb38-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">14</span>),</span>
+<span id="cb38-24"><a href="#cb38-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">11</span>),</span>
+<span id="cb38-25"><a href="#cb38-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb38-26"><a href="#cb38-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"gray90"</span>),</span>
+<span id="cb38-27"><a href="#cb38-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.border =</span> <span class="fu">element_rect</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>),</span>
+<span id="cb38-28"><a href="#cb38-28" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Project_Check1_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(avg_aqi <span class="sc">~</span> total_plastic, <span class="at">data =</span> air_vs_plastic)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = avg_aqi ~ total_plastic, data = air_vs_plastic)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-80.27 -52.82 -14.96  41.97 143.40 
+
+Coefficients:
+               Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)   7.759e+01  8.957e+00   8.662 6.36e-12 ***
+total_plastic 9.298e-04  9.720e-04   0.957    0.343    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 62.17 on 56 degrees of freedom
+Multiple R-squared:  0.01608,   Adjusted R-squared:  -0.001493 
+F-statistic: 0.915 on 1 and 56 DF,  p-value: 0.3429</code></pre>
+</div>
+</div>
+<p>Notes: This hexbin plot shows a slight negative relationship between total plastic waste and average AQI across countries. After remvoing outliers in plastic waste our regression line went from positive to negative. The downward slope of the regression line suggests that countries with higher plastic waste tend to have slightly lower AQI values. However, the relationship is weak because the data points are widely spread out. Most countries cluster at lower plastic waste levels, but their AQI values vary a lot. This means that plastic waste alone does not strongly explain differences in air quality between countries.</p>
+</section>
+<section id="model" class="level1">
+<h1>Model</h1>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(avg_aqi <span class="sc">~</span> total_plastic, <span class="at">data =</span> air_vs_plastic)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>summary_model <span class="ot">&lt;-</span> <span class="fu">summary</span>(model)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>r_squared <span class="ot">&lt;-</span> <span class="fu">round</span>(summary_model<span class="sc">$</span>r.squared, <span class="dv">4</span>)</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>adj_r_squared <span class="ot">&lt;-</span> <span class="fu">round</span>(summary_model<span class="sc">$</span>adj.r.squared, <span class="dv">4</span>)</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>f_stat <span class="ot">&lt;-</span> <span class="fu">round</span>(summary_model<span class="sc">$</span>fstatistic[<span class="dv">1</span>], <span class="dv">3</span>)</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>p_value_model <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">pf</span>(summary_model<span class="sc">$</span>fstatistic[<span class="dv">1</span>], </span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>                          summary_model<span class="sc">$</span>fstatistic[<span class="dv">2</span>], </span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>                          summary_model<span class="sc">$</span>fstatistic[<span class="dv">3</span>], </span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>                          <span class="at">lower.tail =</span> <span class="cn">FALSE</span>), <span class="dv">4</span>)</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(</span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Term =</span> <span class="fu">c</span>(<span class="st">"Intercept"</span>, <span class="st">"Total Plastic"</span>),</span>
+<span id="cb42-14"><a href="#cb42-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">Estimate =</span> <span class="fu">coef</span>(model),</span>
+<span id="cb42-15"><a href="#cb42-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">Standard_Error =</span> summary_model<span class="sc">$</span>coefficients[, <span class="dv">2</span>],</span>
+<span id="cb42-16"><a href="#cb42-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">T_Statistic =</span> summary_model<span class="sc">$</span>coefficients[, <span class="dv">3</span>],</span>
+<span id="cb42-17"><a href="#cb42-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">P_Value =</span> summary_model<span class="sc">$</span>coefficients[, <span class="dv">4</span>]</span>
+<span id="cb42-18"><a href="#cb42-18" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb42-19"><a href="#cb42-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb42-20"><a href="#cb42-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opt_table_font</span>(<span class="at">font =</span> <span class="st">"Arial"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb42-21"><a href="#cb42-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
+<span id="cb42-22"><a href="#cb42-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Linear Regression Results"</span>,</span>
+<span id="cb42-23"><a href="#cb42-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Predicting Average AQI from Total Plastic Waste by Country"</span></span>
+<span id="cb42-24"><a href="#cb42-24" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb42-25"><a href="#cb42-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_spanner</span>(</span>
+<span id="cb42-26"><a href="#cb42-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="st">"Coefficient Information"</span>,</span>
+<span id="cb42-27"><a href="#cb42-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">columns =</span> <span class="fu">c</span>(Estimate, Standard_Error)</span>
+<span id="cb42-28"><a href="#cb42-28" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb42-29"><a href="#cb42-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_spanner</span>(</span>
+<span id="cb42-30"><a href="#cb42-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="st">"Test Statistics"</span>,</span>
+<span id="cb42-31"><a href="#cb42-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">columns =</span> <span class="fu">c</span>(T_Statistic, P_Value)</span>
+<span id="cb42-32"><a href="#cb42-32" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb42-33"><a href="#cb42-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
+<span id="cb42-34"><a href="#cb42-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">Term =</span> <span class="st">"Term"</span>,</span>
+<span id="cb42-35"><a href="#cb42-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">Estimate =</span> <span class="st">"Estimate"</span>,</span>
+<span id="cb42-36"><a href="#cb42-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">Standard_Error =</span> <span class="st">"Standard Error"</span>,</span>
+<span id="cb42-37"><a href="#cb42-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">T_Statistic =</span> <span class="st">"T-Statistic"</span>,</span>
+<span id="cb42-38"><a href="#cb42-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">P_Value =</span> <span class="st">"P-Value"</span></span>
+<span id="cb42-39"><a href="#cb42-39" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb42-40"><a href="#cb42-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb42-41"><a href="#cb42-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">weight =</span> <span class="st">"bold"</span>),</span>
+<span id="cb42-42"><a href="#cb42-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_column_labels</span>()</span>
+<span id="cb42-43"><a href="#cb42-43" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb42-44"><a href="#cb42-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(<span class="at">columns =</span> <span class="fu">c</span>(Estimate, Standard_Error, T_Statistic), <span class="at">decimals =</span> <span class="dv">3</span>) <span class="sc">|&gt;</span></span>
+<span id="cb42-45"><a href="#cb42-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(<span class="at">columns =</span> P_Value, <span class="at">decimals =</span> <span class="dv">4</span>) <span class="sc">|&gt;</span></span>
+<span id="cb42-46"><a href="#cb42-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_source_note</span>(glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"R² = {r_squared} | Adjusted R² = {adj_r_squared} | F-statistic = {f_stat} | Model p-value = {p_value_model}"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="qcccdixgyr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qcccdixgyr table {
+  font-family: Arial, system-ui, 'Segoe UI', Roboto, Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qcccdixgyr thead, #qcccdixgyr tbody, #qcccdixgyr tfoot, #qcccdixgyr tr, #qcccdixgyr td, #qcccdixgyr th {
+  border-style: none;
+}
+
+#qcccdixgyr p {
+  margin: 0;
+  padding: 0;
+}
+
+#qcccdixgyr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#qcccdixgyr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qcccdixgyr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qcccdixgyr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qcccdixgyr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qcccdixgyr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qcccdixgyr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qcccdixgyr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qcccdixgyr .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#qcccdixgyr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#qcccdixgyr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qcccdixgyr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qcccdixgyr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qcccdixgyr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qcccdixgyr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qcccdixgyr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#qcccdixgyr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#qcccdixgyr .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#qcccdixgyr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qcccdixgyr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#qcccdixgyr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qcccdixgyr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qcccdixgyr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qcccdixgyr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qcccdixgyr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qcccdixgyr .gt_left {
+  text-align: left;
+}
+
+#qcccdixgyr .gt_center {
+  text-align: center;
+}
+
+#qcccdixgyr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qcccdixgyr .gt_font_normal {
+  font-weight: normal;
+}
+
+#qcccdixgyr .gt_font_bold {
+  font-weight: bold;
+}
+
+#qcccdixgyr .gt_font_italic {
+  font-style: italic;
+}
+
+#qcccdixgyr .gt_super {
+  font-size: 65%;
+}
+
+#qcccdixgyr .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#qcccdixgyr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#qcccdixgyr .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#qcccdixgyr .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#qcccdixgyr .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#qcccdixgyr .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#qcccdixgyr .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#qcccdixgyr .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#qcccdixgyr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="gt_heading header">
+<td colspan="5" class="gt_heading gt_title gt_font_normal">Linear Regression Results</td>
+</tr>
+<tr class="gt_heading even">
+<td colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Predicting Average AQI from Total Plastic Waste by Country</td>
+</tr>
+<tr class="gt_col_headings gt_spanner_row header">
+<th rowspan="2" id="Term" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Term</th>
+<th colspan="2" id="Coefficient Information" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
+Coefficient Information
+</div></th>
+<th colspan="2" id="Test Statistics" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
+Test Statistics
+</div></th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="Estimate" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Estimate</th>
+<th id="Standard_Error" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Standard Error</th>
+<th id="T_Statistic" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">T-Statistic</th>
+<th id="P_Value" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">P-Value</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Term">Intercept</td>
+<td class="gt_row gt_right" headers="Estimate">77.593</td>
+<td class="gt_row gt_right" headers="Standard_Error">8.957</td>
+<td class="gt_row gt_right" headers="T_Statistic">8.662</td>
+<td class="gt_row gt_right" headers="P_Value">0.0000</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Term">Total Plastic</td>
+<td class="gt_row gt_right" headers="Estimate">0.001</td>
+<td class="gt_row gt_right" headers="Standard_Error">0.001</td>
+<td class="gt_row gt_right" headers="T_Statistic">0.957</td>
+<td class="gt_row gt_right" headers="P_Value">0.3429</td>
+</tr>
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
+<td colspan="5" class="gt_sourcenote">R² = 0.0161 | Adjusted R² = -0.0015 | F-statistic = 0.915 | Model p-value = 0.3429</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+<section id="visualization-2-1" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-2-1">Visualization 2:</h2>
+<p>Description: I wanted to see which multinational brands appear most consistently across countries in the global plastic audit data. Building off our research question regarding whether the same big brands keep showing up together, I first wanted to establish which brands have the widest geographic reach before exploring co-occurrence patterns. I made a chart to show both how many countries each brand appears in and how much total plastic they contribute, allowing two dimensions to be read in a single clean graphic.</p>
+<p>Do the same big brands keep showing up across countries?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>brand_reach <span class="ot">&lt;-</span> plastics <span class="sc">|&gt;</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>parent_company <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Grand Total"</span>, <span class="st">"Unbranded"</span>, <span class="st">"null"</span>, <span class="st">"NULL"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(parent_company) <span class="sc">|&gt;</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n_countries =</span> <span class="fu">n_distinct</span>(country),</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_plastic =</span> <span class="fu">sum</span>(grand_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(n_countries, <span class="at">n =</span> <span class="dv">15</span>) <span class="sc">|&gt;</span></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">parent_company =</span> <span class="fu">reorder</span>(parent_company, n_countries))</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(brand_reach, <span class="fu">aes</span>(<span class="at">x =</span> n_countries, <span class="at">y =</span> parent_company)) <span class="sc">+</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">xend =</span> n_countries,</span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>                   <span class="at">y =</span> parent_company, <span class="at">yend =</span> parent_company),</span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>               <span class="at">color =</span> <span class="st">"grey85"</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> total_plastic), <span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_gradient</span>(</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">low =</span> <span class="st">"mistyrose"</span>, <span class="at">high =</span> <span class="st">"deeppink"</span>,</span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span>comma,</span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Total Plastic Collected"</span></span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Multinational Brands Dominate Global Plastic Pollution"</span>,</span>
+<span id="cb43-22"><a href="#cb43-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Top 15 Brands by Number of Countries Present in 2019–2020"</span>,</span>
+<span id="cb43-23"><a href="#cb43-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Number of countries"</span>,</span>
+<span id="cb43-24"><a href="#cb43-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Parent Companies"</span>,</span>
+<span id="cb43-25"><a href="#cb43-25" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb43-26"><a href="#cb43-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb43-27"><a href="#cb43-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb43-28"><a href="#cb43-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">14</span>),</span>
+<span id="cb43-29"><a href="#cb43-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> <span class="st">"darkgrey"</span>, <span class="at">size =</span> <span class="dv">11</span>),</span>
+<span id="cb43-30"><a href="#cb43-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb43-31"><a href="#cb43-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb43-32"><a href="#cb43-32" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Project_Check1_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Notes: The chart displays the top 15 brands by number of countries they appear in across the 2019–2020 Break Free From Plastic brand audits. Each horizontal segment extends from zero to the number of countries that brand was recorded in, and the dot at the end is colored by total plastic collected (light pink indicating lower volume and hot pink indicating higher volume). I filtered out non-company entries such as “Grand Total” and “Unbranded”, then grouping by parent_company and computing both n_distinct(country) and sum(grand_total) using <code>summarise()</code>. The Coca-Cola Company stands out clearly as both the most geographically widespread brand and the largest plastic polluter by volume, appearing in over 60 countries with a notably darker dot than all others. Interestingly, several brands like Mondelez International and Mars, Incorporated share a similar country count around 42 but with relatively low plastic volume, suggesting wide reach does not always correspond to high pollution output. Together, the chart confirms that a small set of multinational corporations consistently dominates plastic pollution across the globe.</p>
 </section>
 </section>
 
