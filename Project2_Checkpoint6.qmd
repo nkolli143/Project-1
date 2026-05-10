@@ -1,7 +1,7 @@
 ---
 title: "Plastic Waste Project"
 format:
-  dashboard:
+  dashboard: 
     theme: cosmo
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTZuRREjunyFKk2gbvmSMWHEYi_KaBkjgR4w&s"
     nav-buttons:
